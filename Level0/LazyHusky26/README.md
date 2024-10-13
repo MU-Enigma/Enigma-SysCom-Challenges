@@ -1,10 +1,10 @@
-### **Ricing my Desktop on Linux**
+## **Ricing my Desktop on Linux**
 
-#### Submissions
+### Submissions
 
 I submitted Screenshots and Videos of the Rices
 
-#### About the Submissions
+### About the Submissions
 
 **Rice 1**
    - **Komorebi:** to use a Live Wallpaper.
