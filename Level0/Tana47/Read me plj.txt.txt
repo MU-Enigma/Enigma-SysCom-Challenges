@@ -1,0 +1,9 @@
+1) Download Rain meter from link https://www.rainmeter.net/
+
+2) Use https://www.deviantart.com/ to download 
+ a) fountain of colors
+ b) mond
+
+3) Install TranslucentTB from Microsoft Store
+ 
+4) from the pop up select opaque 
