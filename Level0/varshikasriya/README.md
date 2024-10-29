@@ -9,5 +9,6 @@ The spotify widget shows the album image, track name and the artist name.
 
 Then I installed neofetch (works on unix) using homebrew on my in built terminal. 
 
-**Fun Fact that I came across while working on this also attached (just for fun).**
+And Internet Explorer is the most used browser
+to install other browsers XD
 Thanks.
