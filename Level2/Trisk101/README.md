@@ -1,32 +1,40 @@
-# Standard "Hello World" Docker (PS 1.1)
 
-**By**: Parv Dubey  
-**ID**: SE23UMEC021  
+# Simple Custom Shell (PS 2.1)
+
+**By:** Parv Dubey  
+**ID:** SE23UMEC021
 
 ---
 
-Due to Diwali holidays…I left my Linux laptop in hostel, so my level 1 and level 2 contributions have been done via my Windows laptop.
+## Software Requirements
+- **OS:** Windows/MacOS/Linux
+- **Python**
+- **VS Code**
 
-The files and softwares required for my Docker contribution are: 
-- Windows 10 or 11
-- Docker Desktop: Can be downloaded from here for Windows [Docker Desktop for Windows](https://docs.docker.com/desktop/install/windows-install/)
-- VSCode
-- Docker extension in VSCode for full compatibility
+---
 
-Now, setting up and running the Docker Desktop is very easy, just run the `.exe` file and follow all the on-screen commands. Ensure that the Docker Desktop is running by checking the system tray icons and locating the Docker Desktop icon there.
+## Introduction
 
-After that, head over to the **Settings** in Docker Desktop, and under the **General** tab, make sure that **WSL 2** is configured for the backend. Then restart the Docker Desktop. With that, your Docker Desktop is ready.
+We will import our required libraries. No additional libraries are required to be downloaded as all are pre-downloaded Python libraries.
 
-Install Visual Studio Code or any IDE for that matter.  
-In case of VSCode, download the Docker extension from the extensions tab for compatibility with Docker Desktop.
+```
+import os
+import subprocess
+import sys
+```
 
-To verify the installation of Docker Desktop:
-- Open a new terminal in VSCode (or your own IDE) and run the command:
-  ```bash
-  docker --version
-- Once the installation has been verified, run the following command
-  ```bash
-     docker run hello-world
-- Docker will download the image (if not downloaded already) and run it
-- You will see a message saying “Hello from Docker!”
-  
+Other than the top two libraries, the third library (`sys`) is used to make the custom shell functional across 3 operating systems (i.e., Windows, Linux, and MacOS).
+
+The code is mostly self-explanatory. Wherever I have used commands other than normal Python commands, I have given comments to explain their roles in that particular code block.
+
+The code is very basic and straightforward, with mostly condition-based operations for all of the required commands to work (i.e., `cd`, `mkdir`, `touch`, `open`, `exit`). I have included one or two extra lines of code in each defined function to handle any errors and prevent the code from crashing.
+
+For the functions `cd` and `mkdir`, I used help from ChatGPT to understand what commands I needed to use and how and where I should implement them in the code.
+
+The entire shell has been coded in Python and on VS Code with a manual install of the Python extension for it and Python 3.11 from the Microsoft Store.
+
+---
+
+## Important Note
+
+When the shell is started for the first time, you won't have any directories to access, so run the `mkdir` command and create a few directories. After that, you can use the `cd` command to switch between them. The `touch` and `open` commands will open Notepad on Windows and MacOS, and Nano on Linux distros.
